@@ -10,27 +10,30 @@ const projects = [
     stack: ['React', 'Node.js', 'PostgreSQL', 'Tailwind'],
     year: '2023',
     link: '#',
-    github: 'https://github.com/skpthiran'
+    github: 'https://github.com/skpthiran',
+    image: '/projects/sidequest.png'
   },
   {
     id: '02',
     name: 'Aura',
-    category: 'E-Commerce Experience',
+    category: 'Social Discovery',
     description: 'Aura is a mobile-first social platform focused on helping users discover, connect, and interact more naturally through location-aware features and real-time communication. It brings together authentication, maps, messaging, and clean UX into a polished product designed to feel both practical and immersive.',
     stack: ['Next.js', 'Framer Motion', 'Shopify API', 'WebGL'],
     year: '2024',
     link: '#',
-    github: 'https://github.com/skpthiran'
+    github: 'https://github.com/skpthiran',
+    image: '/projects/aura.png'
   },
   {
     id: '03',
     name: 'Echo',
-    category: 'Real-time Dashboard',
+    category: 'Real-time Messaging',
     description: 'Echo is a mobile-first communication platform focused on creating a smoother, more intelligent messaging experience. Built with real-time interaction, secure architecture, and modern app flow in mind, it brings together authentication, chat, and smart functionality in a polished product designed for everyday use.',
     stack: ['TypeScript', 'React', 'D3.js', 'Firebase'],
     year: '2024',
     link: '#',
-    github: 'https://github.com/skpthiran'
+    github: 'https://github.com/skpthiran',
+    image: '/projects/echo.png'
   },
   {
     id: '04',
@@ -40,7 +43,8 @@ const projects = [
     stack: ['React', 'Tailwind CSS', 'Motion', 'Vite'],
     year: '2024',
     link: '#',
-    github: 'https://github.com/skpthiran'
+    github: 'https://github.com/skpthiran',
+    image: '/projects/portfolio.png'
   }
 ];
 
@@ -77,17 +81,34 @@ export default function Projects() {
               className="group relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center"
             >
               {/* Project Image / Visual Placeholder */}
-              <div className="md:col-span-7 order-2 md:order-1 overflow-hidden rounded-2xl bg-[#111] border border-white/5 aspect-[4/3] relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#222] to-[#050505] opacity-50 group-hover:scale-105 transition-transform duration-1000 ease-out" />
+              <div className="md:col-span-7 order-2 md:order-1 overflow-hidden rounded-2xl bg-[#111] border border-white/5 aspect-[4/3] relative group">
+                {project.image ? (
+                  <motion.img
+                    src={project.image}
+                    alt={project.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
+                    initial={{ scale: 1.1 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.5, ease: "easeOut" }}
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#222] to-[#050505] opacity-50 transition-transform duration-1000 ease-out group-hover:scale-105" />
+                )}
                 
-                {/* Abstract visual representation instead of generic placeholder */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-40 transition-opacity duration-700">
-                  <div className="w-3/4 h-3/4 border border-white/20 rounded-full blur-3xl" />
-                  <div className="absolute font-serif text-[12rem] text-white/5 select-none">{project.id}</div>
-                </div>
+                {/* Overlay vignette */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
                 
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                {/* Abstract visual representation fallback/accent */}
+                {!project.image && (
+                  <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-40 transition-opacity duration-700">
+                    <div className="w-3/4 h-3/4 border border-white/20 rounded-full blur-3xl" />
+                    <div className="absolute font-serif text-[12rem] text-white/5 select-none">{project.id}</div>
+                  </div>
+                )}
+                
+                {/* Hover actions */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-[2px] bg-black/20">
                   <a href={project.link} className="px-6 py-3 bg-white text-black rounded-full text-sm font-medium flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     View Live <ArrowUpRight className="w-4 h-4" />
                   </a>
