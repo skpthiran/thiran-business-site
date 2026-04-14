@@ -6,7 +6,7 @@ const projects = [
     id: '01',
     name: 'SideQuest',
     category: 'Full-Stack Web App',
-    description: 'A gamified task management platform designed to turn daily habits into an RPG experience. Built with real-time sync and complex state management.',
+    description: 'SideQuest is a modern productivity web app that gamifies daily tasks and personal progress to make consistency more engaging. Built with a strong full-stack foundation, it blends authentication, notifications, and AI-powered functionality into an interactive experience designed to keep users organized, motivated, and coming back.',
     stack: ['React', 'Node.js', 'PostgreSQL', 'Tailwind'],
     year: '2023',
     link: '#',
