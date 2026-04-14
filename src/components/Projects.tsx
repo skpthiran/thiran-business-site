@@ -16,7 +16,7 @@ const projects = [
     id: '02',
     name: 'Aura',
     category: 'E-Commerce Experience',
-    description: 'A premium headless e-commerce storefront for a boutique fragrance brand. Features smooth page transitions, 3D product viewers, and a custom cart implementation.',
+    description: 'Aura is a mobile-first social platform focused on helping users discover, connect, and interact more naturally through location-aware features and real-time communication. It brings together authentication, maps, messaging, and clean UX into a polished product designed to feel both practical and immersive.',
     stack: ['Next.js', 'Framer Motion', 'Shopify API', 'WebGL'],
     year: '2024',
     link: '#',
