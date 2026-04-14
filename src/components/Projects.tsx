@@ -9,7 +9,7 @@ const projects = [
     description: 'SideQuest is a modern productivity web app that gamifies daily tasks and personal progress to make consistency more engaging. Built with a strong full-stack foundation, it blends authentication, notifications, and AI-powered functionality into an interactive experience designed to keep users organized, motivated, and coming back.',
     stack: ['React', 'Node.js', 'PostgreSQL', 'Tailwind'],
     year: '2023',
-    link: '#',
+    link: 'https://sidequest-bm7.pages.dev/',
     github: 'https://github.com/skpthiran',
     image: 'projects/sidequest.png'
   },
@@ -20,7 +20,7 @@ const projects = [
     description: 'Aura is a mobile-first social platform focused on helping users discover, connect, and interact more naturally through location-aware features and real-time communication. It brings together authentication, maps, messaging, and clean UX into a polished product designed to feel both practical and immersive.',
     stack: ['Next.js', 'Framer Motion', 'Shopify API', 'WebGL'],
     year: '2024',
-    link: '#',
+    link: 'https://skpthiran.github.io/skpthiran-Aura-The-Event-Management-system/',
     github: 'https://github.com/skpthiran',
     image: 'projects/aura.png'
   },
@@ -31,7 +31,7 @@ const projects = [
     description: 'Echo is a mobile-first communication platform focused on creating a smoother, more intelligent messaging experience. Built with real-time interaction, secure architecture, and modern app flow in mind, it brings together authentication, chat, and smart functionality in a polished product designed for everyday use.',
     stack: ['TypeScript', 'React', 'D3.js', 'Firebase'],
     year: '2024',
-    link: '#',
+    link: 'https://skpthiran.github.io/Echo/',
     github: 'https://github.com/skpthiran',
     image: 'projects/echo.png'
   },
@@ -109,7 +109,7 @@ export default function Projects() {
                 
                 {/* Hover actions */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-[2px] bg-black/20">
-                  <a href={project.link} className="px-6 py-3 bg-white text-black rounded-full text-sm font-medium flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white text-black rounded-full text-sm font-medium flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     View Live <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </div>
@@ -140,7 +140,7 @@ export default function Projects() {
                 </div>
                 
                 <div className="flex items-center gap-6 pt-6 border-t border-white/10">
-                  <a href={project.link} className="text-sm font-medium flex items-center gap-2 hover:text-[#C84B31] transition-colors">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-sm font-medium flex items-center gap-2 hover:text-[#C84B31] transition-colors">
                     Live Demo <ArrowUpRight className="w-4 h-4" />
                   </a>
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-sm font-medium flex items-center gap-2 text-white/50 hover:text-white transition-colors">
