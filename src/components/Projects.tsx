@@ -11,7 +11,7 @@ const projects = [
     year: '2023',
     link: '#',
     github: 'https://github.com/skpthiran',
-    image: '/projects/sidequest.png'
+    image: 'projects/sidequest.png'
   },
   {
     id: '02',
@@ -22,7 +22,7 @@ const projects = [
     year: '2024',
     link: '#',
     github: 'https://github.com/skpthiran',
-    image: '/projects/aura.png'
+    image: 'projects/aura.png'
   },
   {
     id: '03',
@@ -33,7 +33,7 @@ const projects = [
     year: '2024',
     link: '#',
     github: 'https://github.com/skpthiran',
-    image: '/projects/echo.png'
+    image: 'projects/echo.png'
   },
   {
     id: '04',
@@ -44,7 +44,7 @@ const projects = [
     year: '2024',
     link: '#',
     github: 'https://github.com/skpthiran',
-    image: '/projects/portfolio.png'
+    image: 'projects/portfolio.png'
   }
 ];
 
@@ -84,7 +84,7 @@ export default function Projects() {
               <div className="md:col-span-7 order-2 md:order-1 overflow-hidden rounded-2xl bg-[#111] border border-white/5 aspect-[4/3] relative group">
                 {project.image ? (
                   <motion.img
-                    src={project.image}
+                    src={`${import.meta.env.BASE_URL}${project.image}`}
                     alt={project.name}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
                     initial={{ scale: 1.1 }}
