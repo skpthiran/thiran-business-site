@@ -29,11 +29,11 @@ export default function Contact() {
               </p>
               
               <div className="flex flex-col gap-6">
-                <a href="mailto:hello@example.com" className="flex items-center gap-4 text-white/70 hover:text-white transition-colors group w-fit">
+                <a href="mailto:skpthiran@gamil.com" className="flex items-center gap-4 text-white/70 hover:text-white transition-colors group w-fit">
                   <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white/30 transition-colors">
                     <Mail className="w-5 h-5" />
                   </div>
-                  <span className="text-lg font-light">hello@example.com</span>
+                  <span className="text-lg font-light">skpthiran@gamil.com</span>
                 </a>
                 
                 <div className="flex gap-4 mt-4">
