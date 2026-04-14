@@ -26,7 +26,7 @@ const projects = [
     id: '03',
     name: 'Echo',
     category: 'Real-time Dashboard',
-    description: 'An analytics dashboard for creators to track cross-platform metrics. Focuses on data visualization, accessibility, and high-performance rendering of large datasets.',
+    description: 'Echo is a mobile-first communication platform focused on creating a smoother, more intelligent messaging experience. Built with real-time interaction, secure architecture, and modern app flow in mind, it brings together authentication, chat, and smart functionality in a polished product designed for everyday use.',
     stack: ['TypeScript', 'React', 'D3.js', 'Firebase'],
     year: '2024',
     link: '#',
