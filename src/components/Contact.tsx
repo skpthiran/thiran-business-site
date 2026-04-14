@@ -81,7 +81,7 @@ export default function Contact() {
                   <a href="https://github.com/skpthiran" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:text-white hover:border-white/30 transition-all">
                     <Github className="w-5 h-5" />
                   </a>
-                  <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:text-white hover:border-white/30 transition-all">
+                  <a href="https://www.linkedin.com/in/thiran-wijesingha-79a1b33b7/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:text-white hover:border-white/30 transition-all">
                     <Linkedin className="w-5 h-5" />
                   </a>
                   <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:text-white hover:border-white/30 transition-all">
