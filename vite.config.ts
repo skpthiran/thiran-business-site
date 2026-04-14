@@ -4,14 +4,13 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // Make sure this is your actual repo name! 
-  base: '/Thiran-Wijesingha-portfolio/', 
+  // Updated to match your EXACT GitHub repository name
+  base: '/thiran-business-site/', 
   
   plugins: [react(), tailwindcss()],
   
   resolve: {
     alias: {
-      // Changed from './src' back to '.' to fix the double src issue
       '@': path.resolve(__dirname, '.'),
     },
   },
