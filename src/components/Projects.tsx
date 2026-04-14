@@ -10,7 +10,7 @@ const projects = [
     stack: ['React', 'Node.js', 'PostgreSQL', 'Tailwind'],
     year: '2023',
     link: '#',
-    github: '#'
+    github: 'https://github.com/skpthiran'
   },
   {
     id: '02',
@@ -20,7 +20,7 @@ const projects = [
     stack: ['Next.js', 'Framer Motion', 'Shopify API', 'WebGL'],
     year: '2024',
     link: '#',
-    github: '#'
+    github: 'https://github.com/skpthiran'
   },
   {
     id: '03',
@@ -30,7 +30,7 @@ const projects = [
     stack: ['TypeScript', 'React', 'D3.js', 'Firebase'],
     year: '2024',
     link: '#',
-    github: '#'
+    github: 'https://github.com/skpthiran'
   },
   {
     id: '04',
@@ -40,7 +40,7 @@ const projects = [
     stack: ['React', 'Tailwind CSS', 'Motion', 'Vite'],
     year: '2024',
     link: '#',
-    github: '#'
+    github: 'https://github.com/skpthiran'
   }
 ];
 
@@ -122,7 +122,7 @@ export default function Projects() {
                   <a href={project.link} className="text-sm font-medium flex items-center gap-2 hover:text-[#C84B31] transition-colors">
                     Live Demo <ArrowUpRight className="w-4 h-4" />
                   </a>
-                  <a href={project.github} className="text-sm font-medium flex items-center gap-2 text-white/50 hover:text-white transition-colors">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-sm font-medium flex items-center gap-2 text-white/50 hover:text-white transition-colors">
                     GitHub <Github className="w-4 h-4" />
                   </a>
                   <span className="ml-auto text-xs text-white/30">{project.year}</span>
